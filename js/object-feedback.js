@@ -89,12 +89,12 @@ function initScene(){
 		});
 	mirror.uniforms = globalUniforms;
 	mirror.init(w,h);
-	var path = "textures/cube/Bridge2/";
+	var path = "textures/cube/skybox/";
 	var format = '.jpg';
 	var urls = [
-			path + 'posx' + format, path + 'negx' + format,
-			path + 'posy' + format, path + 'negy' + format,
-			path + 'posz' + format, path + 'negz' + format
+			path + 'px' + format, path + 'nx' + format,
+			path + 'py' + format, path + 'ny' + format,
+			path + 'pz' + format, path + 'nz' + format
 	];
 	var reflectionCube = THREE.ImageUtils.loadTextureCube( urls );
 	reflectionCube.format = THREE.RGBFormat;
